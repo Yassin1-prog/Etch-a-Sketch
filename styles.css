@@ -1,0 +1,25 @@
+.square {
+    padding: 20px;
+    flex: 1;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 600px;
+    max-height: 600px;
+    border: solid palevioletred 3px;
+}
+
+#bt {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
