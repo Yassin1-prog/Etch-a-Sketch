@@ -1,3 +1,7 @@
+function getRandomRGBValue() {
+    return Math.floor(Math.random() * 256);
+  }
+
 const container = document.querySelector('.container');
 const content = document.querySelector('.content');
 
@@ -7,8 +11,13 @@ function grid(size) {
         row.classList.add('col');
         for(let j = 0; j < size; j++) {
             const div = document.createElement('div');
+            div.style.height = `${640 / size}px`;
+            div.style.height = `${640 / size}px`;
             div.addEventListener('mouseover', () => {
-                div.style.backgroundColor = 'blue';
+              const red = getRandomRGBValue();
+              const green = getRandomRGBValue();
+              const blue = getRandomRGBValue();
+              div.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
             });
             div.classList.add('square');
             row.appendChild(div);

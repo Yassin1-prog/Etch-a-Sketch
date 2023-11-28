@@ -1,16 +1,19 @@
 .square {
-    padding: 20px;
     flex: 1;
 }
 
 .col {
+    max-width: 640px;
+    max-height: 640px;
     display: flex;
     justify-content: center;
 }
 
 .container {
-    max-width: 600px;
-    max-height: 600px;
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
     border: solid palevioletred 3px;
 }
 
@@ -20,6 +23,7 @@
 }
 
 .content {
+    overflow: hidden;
     display: flex;
     justify-content: center;
 }
